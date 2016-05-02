@@ -1,3 +1,4 @@
+# This script parses the mailbox and calculates the average spam confidense value
 # Use the file name mbox-short.txt as the file name
 fname = raw_input("Enter file name: ")
 fh = open(fname)
@@ -10,6 +11,5 @@ for line in fh:
     strnumber = line[pos+1:]
     strnumber = strnumber.strip()
     spam = spam + float(strnumber)
-    
-print "Average spam confidence: ",spam/count
 
+print "Average spam confidence: ",spam/count
