@@ -1,3 +1,4 @@
+# This simple script uses HTTP GET to read from the www server and printd the response
 import socket
 
 mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
